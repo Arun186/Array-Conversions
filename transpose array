@@ -1,0 +1,11 @@
+public Double[,] transpose(Double[,] array, int array_width, int array_height)
+        {
+            var B = new Double[array_height, array_width];
+            int i, j;
+
+            for (i = 0; i < array_width; i++)
+                for (j = 0; j < array_height; j++)
+                    B[j, i] = A[i, j];
+
+            return B;
+        }
