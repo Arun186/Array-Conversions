@@ -1,0 +1,16 @@
+        public Double[,] Convert1dto2DArray(Double[] InputData, int row, int col)
+        {
+            Double[,] data = new Double[row, col];
+            int idx = 0;
+            
+                for (int row_cnt = 0; row_cnt < row; row_cnt++)
+                {
+                    for (int col_cnt = 0; col_cnt < col; col_cnt++)
+                    {
+                            data[row_cnt, col_cnt] = InputData[idx];
+                             idx += 1;
+                    }                          
+                }
+            }
+            return (data);
+        }
